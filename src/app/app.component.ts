@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngRevision';
+  name:string = "Peter";
+  isDisabled:boolean=true;
+  changeVal(){
+    this.isDisabled = !this.isDisabled;
+  }
 }

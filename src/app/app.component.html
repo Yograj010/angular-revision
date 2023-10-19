@@ -1,4 +1,7 @@
 <h1>learn component</h1>
-<app-user-list></app-user-list>
-<!-- we can chnage the 'selector' name, as done below -->
-<!-- <app-user-line></app-user-line> -->
+<!-- interpolation only works for string and numeric values -->
+<input type="text" name="user-name" value={{name}} disabled="{{isDisabled}}">   
+<br/><br/>
+<!-- property binding works for boolean values -->
+<input type="text" name="user-name2" [value]=name [disabled]=isDisabled>
+<button (click)="changeVal()">change</button>
