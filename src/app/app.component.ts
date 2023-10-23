@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngRevision';
+  show:boolean = true;
+  showVal:String = 'yes';
+  color:String = 'blue';
 }
